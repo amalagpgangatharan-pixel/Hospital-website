@@ -1,0 +1,77 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+h4{
+    color:blue;
+}
+li{
+    color:blue;
+}
+h3{
+    color:crimson;
+}
+input{
+    background-color: chartreuse;
+    border: solid blue;
+}
+input:hover{
+    background-color: red;
+}
+input{
+    color:blue;
+}
+label{
+    color:blue;
+}
+select{
+    background-color: chartreuse;
+    border: solid blue;
+    color: blue;
+}
+select:hover{
+    background-color: red;
+}
+.middle{
+    width:100%;
+    background-color:dodgerblue;
+}
+/*extra small device(phone,600px and down)*/
+@media only screen and (max-width:600px){
+    .middle{
+        background: green;
+        width: 100%;
+    }
+}
+/*medium devices(landscape tablets,768px and up)*/
+@media only screen and (min-width:768px){
+    .middle{
+        background: yellow;
+        width: 100%;
+    }
+}
+.middle div h1 {
+    width: 1200px;
+    color: orangered;
+    padding:10px ;
+    text-align: left;
+}
+.bottom{
+    width: 100%;
+    font-size: 18px;
+    background-color: coral;
+}
+.bottom_up{
+    width: 100%;
+    background-color: aqua;
+}
+.bottom_up div{
+    width:100%px;
+    background-color: aqua;
+}
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+.top{
+    width: 100%;
+    background-color:crimson;
+}
+/*extra small device(phone,600px and down)*/
+@media only screen and (max-width:600px){
+    .top{
+        background: green;
+        width: 100%;
+    }
+}
+/*medium devices(landscape tablets,768px and up)*/
+@media only screen and (min-width:768px){
+    .top{
+        background: skyblue;
+        width: 100%;
+    }
+}
+.top h1{
+    width: 1200px;
+    padding: 20px;
+    text-align: center;
+    color: crimson;
+}
+h2{
+    color: red;
+    transition: transform 0.5s;
+    display: inline;
+    position: relative;
+    animation: move 7s infinite alternate;
+}
+ @keyframes move{
+    0%{
+        left: 0 ;
+    }
+    100%{
+        left: 1150px;
+    }
+
+}
+li{
+    color: blue;
+}
+body{
+    background-color: khaki;
+}

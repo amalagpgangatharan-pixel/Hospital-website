@@ -1,0 +1,62 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+table,th,td{
+    border: solid;
+    padding: 20px;
+}
+.top{
+    width:100%;
+    background-color: blueviolet;
+}
+@media only screen and (max-width:600px){
+    .top{
+        background: green;
+        width: 100%;
+    }
+}
+/*medium devices(landscape tablets,768px and up)*/
+@media only screen and (min-width:768px){
+    .top{
+        background: hotpink;
+        width: 100%;
+    }
+}
+.top h1{
+    width:1200px;
+    padding: 20px;
+    text-align: center;
+    color: brown;
+}
+td{
+    background-color:cornflowerblue;
+}
+td:hover{
+    color: maroon;
+}
+th{
+    background-color: crimson;
+}
+th:hover{
+    color: blue;
+}
+body{
+    background-color: aquamarine;
+}
+.bottom img{
+    transition: transform 0.5s;
+    display: inline;
+    position: relative;
+    animation: move 6s infinite alternate;
+}
+ @keyframes move{
+    0%{
+        left: 0 ;
+    }
+    100%{
+        left: 1150px;
+    }
+
+}

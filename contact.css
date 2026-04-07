@@ -1,0 +1,62 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+ body{
+    background-color:palegreen;
+ }
+.top{
+    width: 100%;
+   background-color: blueviolet;
+}
+/*extra small device(phone,600px and down)*/
+@media only screen and (max-width:600px){
+    .top{
+        background:tomato;
+        width: 100%;
+    }
+}
+/*medium devices(landscape tablets,768px and up)*/
+@media only screen and (min-width:768px){
+    .top{
+        background:chartreuse;
+        width: 100%;
+    }
+}
+.top h2{
+    width: 1200px;
+    padding: 20px;
+    text-align: center;
+    color: orangered;
+}
+h4{
+    color:blue;
+    text-align:left;
+}
+.middle img{
+    transition: transform 0.5s;
+    display: inline;
+    position: relative;
+    animation: move 6s infinite alternate;
+}
+ @keyframes move{
+    0%{
+        left: 0 ;
+    }
+    100%{
+        left: 1150px;
+    }
+}
+.bottom img{
+     position: relative;
+     left:500px;
+     transition: 0.5s;
+}
+     
+.bottom img:hover{
+    animation: bounce 0.8s infinite alternate;
+}
+@keyframes bounce{
+    from { transform: translateX(0);}
+    to {transform: translateX(150px);}
+}

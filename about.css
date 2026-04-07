@@ -1,0 +1,53 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+.top{
+    width: 100%;
+    background-color:chartreuse;
+}
+/*extra small device(phone,600px and down)*/
+@media only screen and (max-width:600px){
+    .top{
+        background: green;
+        width: 100%;
+    }
+}
+/*medium devices(landscape tablets,768px and up)*/
+@media only screen and (min-width:768px){
+    .top{
+        background:tomato;
+        width: 100%;
+    }
+}
+.top h1{
+    padding: 20px;
+    text-align: center;
+    color:indigo;
+}
+h2{
+    color:green;
+}
+h3{
+    color:saddlebrown;
+}
+body{
+    background-color: rosybrown;
+}
+.bottom-down img{
+    transition: transform 0.5s;
+    display: inline;
+    position: relative;
+    animation: move 6s infinite alternate;
+}
+ @keyframes move{
+    0%{
+        left: 0 ;
+    }
+    100%{
+        left: 1150px;
+    }
+
+}
+
